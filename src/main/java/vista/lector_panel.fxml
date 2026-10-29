@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="31.0" prefWidth="600.0" style="-fx-background-color: #6A89A7;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/arrow-narrow-left.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="33.0" prefWidth="59.0" />
+            <Label prefHeight="29.0" prefWidth="350.0" text="Nombre del libro" />
+            <Pane prefHeight="33.0" prefWidth="48.0" />
+            <TextField prefHeight="28.0" prefWidth="325.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Pane prefHeight="33.0" prefWidth="13.0" />
+            <ImageView fitHeight="33.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/search.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="36.0" prefWidth="100.0" />
+            <ImageView fitHeight="36.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/book.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="36.0" prefWidth="100.0" />
+            <ImageView fitHeight="36.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/square.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="200.0" prefWidth="100.0" />
+            <ImageView fitHeight="36.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/rotate-2.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="200.0" prefWidth="100.0" />
+            <ImageView fitHeight="36.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/rotate-clockwise-2.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="200.0" prefWidth="100.0" />
+            <ImageView fitHeight="36.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/zoom-in.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="200.0" prefWidth="100.0" />
+            <ImageView fitHeight="36.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/zoom-out.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="200.0" prefWidth="100.0" />
+            <ImageView fitHeight="33.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/sticker-2.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="33.0" prefWidth="100.0" />
+            <ImageView fitHeight="33.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/settings.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="33.0" prefWidth="125.0" />
+            <ImageView fitHeight="33.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/dots-vertical.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="33.0" prefWidth="33.0" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="31.0" prefWidth="600.0" style="-fx-background-color: #6A89A7;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="31.0" prefWidth="81.0" text="Pagina x de x" />
+            <Slider prefHeight="33.0" prefWidth="513.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Slider>
+            <Label prefHeight="31.0" prefWidth="95.0" text="Capitulo:" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <WebView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <VBox prefHeight="583.0" prefWidth="287.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="76.0" prefWidth="287.0" style="-fx-background-color: blue;">
+               <children>
+                  <VBox prefHeight="95.0" prefWidth="277.0" style="-fx-background-color: #384959;">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="138.0" text="Panel de Notas" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #384959;">
+                           <children>
+                              <Pane prefHeight="37.0" prefWidth="49.0" />
+                              <Label text="Tipo:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefWidth="150.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ComboBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="443.0" prefWidth="287.0" style="-fx-background-color: lightyellow;">
+               <content>
+                  <VBox prefHeight="379.0" prefWidth="285.0" style="-fx-background-color: lightyellow;" />
+               </content>
+            </ScrollPane>
+            <VBox prefHeight="105.0" prefWidth="287.0" style="-fx-background-color: #88BDF2;">
+               <children>
+                  <TextArea prefHeight="34.0" prefWidth="287.0" promptText="Escribe una observacion del fragmento seleccionado" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="51.0" prefWidth="50.0" />
+                        <ComboBox prefHeight="25.0" prefWidth="125.0" promptText="Tipo">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ComboBox>
+                        <Pane prefHeight="23.0" prefWidth="143.0" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="Guardar nota">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Pane prefHeight="51.0" prefWidth="50.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

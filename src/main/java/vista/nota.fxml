@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="194.0" prefWidth="292.0" style="-fx-border-color: grey;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="26.0" prefWidth="285.0" style="-fx-background-color: #6A89A7;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/sticker-2.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="32.0" prefWidth="227.0" />
+            <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/trash.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox prefHeight="154.0" prefWidth="279.0" style="-fx-border-color: grey; -fx-background-color: #88BDF2;">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="277.0">
+               <children>
+                  <Pane prefHeight="48.0" prefWidth="7.0" style="-fx-background-color: #384959;" />
+                  <TextArea prefHeight="65.0" prefWidth="287.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="50.0" style="-fx-background-color: lightgreen;" text="Tipo" textAlignment="CENTER" />
+                  <Pane prefHeight="36.0" prefWidth="203.0" />
+                  <Label text="Fecha" />
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="277.0">
+               <children>
+                  <Pane prefHeight="48.0" prefWidth="25.0" style="-fx-background-color: #384959;" />
+                  <TextArea prefHeight="43.0" prefWidth="307.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
