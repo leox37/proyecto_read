@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6A89A7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app_read.controlador.ColeccionesController">
+   <top>
+      <Label text="Colecciones" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <VBox prefHeight="393.0" prefWidth="622.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="600.0" style="-fx-border-color: grey; -fx-background-color: #384959;">
+               <children>
+                  <ImageView fitHeight="53.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/library.png" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="54.0" prefWidth="188.0" />
+                  <Label text="Crear nueva coleccion" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="165.0" prefWidth="600.0">
+               <children>
+                  <Pane prefHeight="159.0" prefWidth="240.0" />
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Pane prefHeight="32.0" prefWidth="100.0" />
+                        <TextField fx:id="campo_coleccion" alignment="CENTER" promptText="&quot;coleccion&quot;" />
+                        <Pane prefHeight="40.0" prefWidth="100.0" />
+                        <Button fx:id="boton_crear_coleccion" mnemonicParsing="false" prefHeight="25.0" prefWidth="168.0" text="Crear">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #384959;">
+               <children>
+                  <Pane prefHeight="74.0" prefWidth="209.0" />
+                  <Label text="Elegir en la lista de colecciones " textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Separator prefHeight="120.0" prefWidth="240.0" />
+                  <VBox prefHeight="100.0" prefWidth="167.0">
+                     <children>
+                        <ComboBox fx:id="combo_colecciones" prefHeight="25.0" prefWidth="177.0" promptText="coleccion">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ComboBox>
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                        <Button fx:id="boton_ok" mnemonicParsing="false" prefHeight="25.0" prefWidth="201.0" text="OK" textFill="#1fa812">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Separator prefHeight="100.0" prefWidth="240.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="157.0" prefWidth="508.0" style="-fx-background-color: #384959;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app_read.controlador.TarjetaLibroController">
+   <children>
+      <Pane prefHeight="157.0" prefWidth="14.0" />
+      <ImageView fx:id="imagen_portada" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/libro_default.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Pane prefHeight="157.0" prefWidth="14.0" />
+      <VBox prefHeight="141.0" prefWidth="393.0">
+         <children>
+            <Label fx:id="label_nombre_libro1" text="Nombre" textFill="WHITE" />
+            <Label fx:id="label_autor" text="Autor" textFill="WHITE" />
+            <Label fx:id="label_tipo1" text="Tipo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Label>
+            <Pane prefHeight="23.0" prefWidth="309.0" />
+            <HBox alignment="CENTER_LEFT" spacing="8.0">
+               <children>
+                  <ProgressBar fx:id="barra_progreso" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="351.0" progress="0.0" HBox.hgrow="ALWAYS" />
+                  <Label fx:id="label_progreso" minWidth="38.0" text="0%" textFill="WHITE" />
+               </children>
+            </HBox>
+            <Pane prefHeight="27.0" prefWidth="309.0" />
+            <HBox prefHeight="29.0" prefWidth="397.0">
+               <children>
+                  <Pane prefHeight="29.0" prefWidth="45.0" />
+                  <ImageView fx:id="boton_agregar_favoritos" fitHeight="26.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/star.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Pane prefHeight="29.0" prefWidth="45.0" />
+                  <ImageView fx:id="boton_agregar_despues" fitHeight="26.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/clock-hour-4.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Pane prefHeight="29.0" prefWidth="45.0" />
+                  <ImageView fx:id="boton_agregar_leidos" fitHeight="26.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/check.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Pane prefHeight="29.0" prefWidth="45.0" />
+                  <ImageView fx:id="boton_agregar_coleccion" fitHeight="26.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/library.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Pane prefHeight="29.0" prefWidth="45.0" />
+                  <ImageView fx:id="boton_mas_tarjeta" fitHeight="26.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/dots-vertical.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Pane prefHeight="29.0" prefWidth="45.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

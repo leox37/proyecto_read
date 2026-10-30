@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <ImageView fitHeight="399.0" fitWidth="601.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../assets/imagen_uni.jpeg" />
+         </image>
+      </ImageView>
+   </center>
+   <top>
+      <HBox prefHeight="36.0" prefWidth="600.0" style="-fx-background-color: #6A89A7;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="36.0" prefWidth="224.0" />
+            <Label text="Universidad de Cartagena" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="29.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="29.0" prefWidth="215.0" />
+            <Label prefHeight="17.0" prefWidth="87.0" text="Comuniquese a:" />
+            <Label prefHeight="17.0" prefWidth="71.0" text="23234555" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

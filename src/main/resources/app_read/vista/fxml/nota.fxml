@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="194.0" prefWidth="260.0" spacing="2.0" style="-fx-border-color: grey;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app_read.controlador.NotaController">
+   <padding>
+      <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+   </padding>
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" style="-fx-background-color: #6A89A7;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/sticker-2.png" />
+               </image>
+            </ImageView>
+            <Pane HBox.hgrow="ALWAYS" />
+            <ImageView fx:id="boton_borrar" fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/trash.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox maxWidth="1.7976931348623157E308" minWidth="0.0" prefHeight="154.0" prefWidth="0.0" spacing="3.0" style="-fx-border-color: grey; -fx-background-color: #88BDF2;">
+         <children>
+            <HBox prefHeight="65.0">
+               <children>
+                  <Pane fx:id="barra_color" minWidth="7.0" prefHeight="48.0" prefWidth="7.0" style="-fx-background-color: #384959;" />
+                  <TextArea fx:id="area_fragmento" editable="false" maxWidth="1.7976931348623157E308" prefHeight="65.0" prefWidth="0.0" wrapText="true" HBox.hgrow="ALWAYS">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor></TextArea>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0">
+               <children>
+                  <Label fx:id="label_tipo" alignment="CENTER" contentDisplay="CENTER" maxWidth="120.0" minWidth="50.0" prefHeight="22.0" style="-fx-background-color: lightgreen;" text="Tipo" textAlignment="CENTER" />
+                  <Pane HBox.hgrow="ALWAYS" />
+                  <Label fx:id="label_fecha" text="Fecha" />
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0">
+               <children>
+                  <Pane minWidth="7.0" prefHeight="43.0" prefWidth="7.0" style="-fx-background-color: #384959;" />
+                  <TextArea fx:id="area_declaracion1" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="0.0" wrapText="true" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
